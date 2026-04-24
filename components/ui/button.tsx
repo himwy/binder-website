@@ -1,5 +1,6 @@
 import { clsx } from "clsx";
 import type { ComponentPropsWithoutRef } from "react";
+import type React from "react";
 
 type Variant = "primary" | "nav-primary" | "text-link";
 
@@ -7,6 +8,7 @@ type Props = ComponentPropsWithoutRef<"button"> & {
   variant?: Variant;
   as?: "button" | "a";
   href?: string;
+  onClick?: (e: React.MouseEvent<HTMLElement>) => void;
 };
 
 const base =
@@ -21,17 +23,35 @@ const variants: Record<Variant, string> = {
     "h-[44px] px-1 text-ink border-b-[1.5px] border-border hover:border-ink rounded-none text-[14px] font-semibold",
 };
 
-export function Button({ variant = "primary", as, href, className, children, ...rest }: Props) {
+export function Button({
+  variant = "primary",
+  as,
+  href,
+  className,
+  onClick,
+  children,
+  ...rest
+}: Props) {
   const cls = clsx(base, variants[variant], className);
   if (as === "a" || href) {
     return (
-      <a href={href} className={cls} target="_blank" rel="noopener noreferrer">
+      <a
+        href={href}
+        className={cls}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={onClick as React.MouseEventHandler<HTMLAnchorElement>}
+      >
         {children}
       </a>
     );
   }
   return (
-    <button className={cls} {...rest}>
+    <button
+      className={cls}
+      onClick={onClick as React.MouseEventHandler<HTMLButtonElement>}
+      {...rest}
+    >
       {children}
     </button>
   );

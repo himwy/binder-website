@@ -1,8 +1,7 @@
-import { getWaitlistUrl } from "@/lib/waitlist-url";
 import { useTranslations } from "next-intl";
 import { Brand } from "./brand";
 import { LanguageToggle } from "./language-toggle";
-import { Button } from "./ui/button";
+import { NavCTA } from "./nav-cta";
 
 export function Nav() {
   const t = useTranslations("nav");
@@ -28,9 +27,7 @@ export function Nav() {
         </div>
         <div className="flex items-center gap-4">
           <LanguageToggle />
-          <Button variant="nav-primary" as="a" href={getWaitlistUrl()}>
-            {t("cta")}
-          </Button>
+          <NavCTA />
         </div>
       </div>
     </header>

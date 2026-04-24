@@ -1,12 +1,15 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Eyebrow } from "@/components/ui/eyebrow";
+import type { Locale } from "@/i18n";
+import { trackWaitlistClick } from "@/lib/analytics";
 import { getWaitlistUrl } from "@/lib/waitlist-url";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export function Waitlist() {
   const t = useTranslations("waitlist");
+  const locale = useLocale() as Locale;
   return (
     <section className="py-28 md:py-36 text-center">
       <motion.div
@@ -21,7 +24,12 @@ export function Waitlist() {
           {t("title")}
         </h2>
         <p className="text-[15px] text-muted leading-[1.55] mb-10 font-medium">{t("body")}</p>
-        <Button variant="primary" as="a" href={getWaitlistUrl()}>
+        <Button
+          variant="primary"
+          as="a"
+          href={getWaitlistUrl()}
+          onClick={() => trackWaitlistClick("waitlist", locale)}
+        >
           {t("cta")} →
         </Button>
         <p className="text-[12.5px] text-muted mt-6 font-medium">{t("micro")}</p>

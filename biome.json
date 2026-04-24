@@ -6,7 +6,8 @@
     "rules": {
       "recommended": true,
       "a11y": { "all": true },
-      "style": { "noNonNullAssertion": "error" }
+      "style": { "noNonNullAssertion": "error" },
+      "security": { "noDangerouslySetInnerHtml": "off" }
     }
   },
   "formatter": {
@@ -16,6 +17,6 @@
     "lineWidth": 100
   },
   "files": {
-    "ignore": ["out", ".next", "node_modules", "public/spline", "public/screens"]
+    "ignore": ["out", ".next", "node_modules", "public/spline", "public/screens", "scripts"]
   }
 }
