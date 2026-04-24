@@ -50,10 +50,10 @@ export function Hero() {
           className="absolute inset-[10%_5%] rounded-full bg-[radial-gradient(ellipse_at_35%_30%,#f5f5f7_0%,#ffffff_65%)]"
         />
         <SplineScene
-          scene="/spline/hero.splinecode"
+          scene="https://my.spline.design/molang3dcopy-fRSIeI2frDYN3teS19TJh9Zt/"
           fallback="/hero-fallback.png"
-          alt="Binder app on iPhone showing the browse feed"
-          className="relative z-10 w-full h-full flex items-center justify-center"
+          alt="Binder 3D scene"
+          className="relative z-10 w-full h-full"
         />
       </div>
     </section>
