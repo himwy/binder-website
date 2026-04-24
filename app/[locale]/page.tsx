@@ -1,7 +1,14 @@
 import { Footer } from "@/components/footer";
 import { Nav } from "@/components/nav";
+import { BilingualProof } from "@/components/section/bilingual-proof";
+import { FAQ } from "@/components/section/faq";
+import { Features } from "@/components/section/features";
+import { Hero } from "@/components/section/hero";
+import { HowItWorks } from "@/components/section/how-it-works";
+import { Stats } from "@/components/section/stats";
+import { Waitlist } from "@/components/section/waitlist";
 import { type Locale, locales } from "@/i18n";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 export default async function HomePage({
@@ -12,17 +19,19 @@ export default async function HomePage({
   const { locale } = await params;
   if (!locales.includes(locale as Locale)) notFound();
 
-  // Enable static rendering
   setRequestLocale(locale);
 
-  const t = await getTranslations("hero");
   return (
     <>
       <Nav />
-      <main className="min-h-[60vh] max-w-page mx-auto px-6 md:px-12 py-20">
-        <h1 className="text-[clamp(34px,6vw,72px)] leading-[0.96] tracking-[-0.04em] font-extrabold">
-          {t("titleLine1")} {t("titleLine2")}
-        </h1>
+      <main>
+        <Hero />
+        <Stats />
+        <HowItWorks />
+        <Features />
+        <FAQ />
+        <BilingualProof />
+        <Waitlist />
       </main>
       <Footer />
     </>
