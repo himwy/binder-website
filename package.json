@@ -20,6 +20,8 @@
     "bake:screens": "tsx scripts/bake-screens.ts"
   },
   "dependencies": {
+    "@splinetool/react-spline": "^4.1.0",
+    "@splinetool/runtime": "^1.12.88",
     "clsx": "^2.1.1",
     "next": "15.5.15",
     "next-intl": "^4.9.1",
