@@ -12,5 +12,61 @@
     "lede": "Hong Kong's Pokémon trading board — designed for collectors who want real trades, face to face.",
     "cta": "Join the waitlist",
     "secondary": "Watch the tour"
-  }
+  },
+  "stats": {
+    "districts": {
+      "num": "18",
+      "label": "HK Districts",
+      "sub": "Every listing tagged by district. No shipping, no couriers."
+    },
+    "bilingual": {
+      "num": "EN · 繁",
+      "label": "Bilingual day one",
+      "sub": "Every string flips — including the tab bar."
+    },
+    "launch": {
+      "num": "Summer 2026",
+      "label": "Beta launch",
+      "sub": "Hong Kong collectors get early access. Apply below."
+    }
+  },
+  "howItWorks": {
+    "index": "01",
+    "kicker": "HOW IT WORKS",
+    "title": "Four steps, one handshake."
+  },
+  "features": {
+    "index": "02",
+    "kicker": "FEATURES",
+    "title": "Built for how Hong Kong actually trades.",
+    "pairs": {
+      "title": "Every post is a pair.",
+      "body": "Forcing a 'want' surfaces liquidity a one-sided feed can't see."
+    },
+    "pricing": {
+      "title": "Both sides see the same number.",
+      "body": "Raw and graded prices auto-pulled in HKD, refreshed daily. No haggling on made-up numbers."
+    },
+    "district": {
+      "title": "Sha Tin Saturday 2pm.",
+      "body": "Every listing tagged with one of 18 HK districts. Cantonese-first. In-person only by design."
+    }
+  },
+  "bilingual": { "title": "Every string flips." },
+  "faq": { "index": "03", "kicker": "FAQ", "title": "Questions, answered." },
+  "waitlist": {
+    "eyebrow": "DAY ONE",
+    "title": "Be there on launch day.",
+    "body": "A small group of Hong Kong collectors, selected from the waitlist, get early access. First-come, first-served.",
+    "cta": "Join the waitlist",
+    "micro": "No spam. One email when we open. Unsubscribe whenever."
+  },
+  "footer": {
+    "copyright": "© 2026 Binder Labs · Hong Kong",
+    "instagram": "Instagram",
+    "terms": "Terms",
+    "privacy": "Privacy"
+  },
+  "notFound": { "title": "404", "lede": "This page isn't in the binder.", "cta": "Back to home" },
+  "common": { "english": "English", "chinese": "繁體中文" }
 }

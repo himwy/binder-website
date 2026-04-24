@@ -7,5 +7,53 @@
     "lede": "為香港收藏家而設的寶可夢卡牌交換平台。不用寄，面對面。",
     "cta": "加入候補名單",
     "secondary": "看看產品介紹"
-  }
+  },
+  "stats": {
+    "districts": {
+      "num": "18",
+      "label": "18 區",
+      "sub": "每張貼文都標記地區。面對面交收，唔使寄。"
+    },
+    "bilingual": {
+      "num": "EN · 繁",
+      "label": "由第一天起雙語",
+      "sub": "每個字都雙語,連導航列都翻譯。"
+    },
+    "launch": { "num": "Summer 2026", "label": "測試版", "sub": "香港收藏家搶先體驗。於下方登記。" }
+  },
+  "howItWorks": { "index": "01", "kicker": "運作方式", "title": "四步，完成一單交易。" },
+  "features": {
+    "index": "02",
+    "kicker": "功能",
+    "title": "為香港交易者而設。",
+    "pairs": {
+      "title": "每張貼文都是一對。",
+      "body": "強制配對「想要」嘅卡,一面倒嘅 feed 做唔到嘅配對就會浮現。"
+    },
+    "pricing": {
+      "title": "買賣雙方，同一個價。",
+      "body": "原卡同鑑定卡嘅價錢每日自動以港幣更新。唔駛喺虛構嘅數字上爭拗。"
+    },
+    "district": {
+      "title": "星期六下午兩點，沙田見。",
+      "body": "每張貼文都配有 18 區嘅其中一區。粵語優先。設計上只限面對面交收。"
+    }
+  },
+  "bilingual": { "title": "每一個字都翻譯。" },
+  "faq": { "index": "03", "kicker": "常見問題", "title": "常見問題。" },
+  "waitlist": {
+    "eyebrow": "第一日",
+    "title": "加入第一批用戶。",
+    "body": "由候補名單揀選一小撮香港收藏家搶先體驗。先到先得。",
+    "cta": "加入候補名單",
+    "micro": "唔會騷擾你。開放嗰日先會寄一封。"
+  },
+  "footer": {
+    "copyright": "© 2026 Binder Labs · Hong Kong",
+    "instagram": "Instagram",
+    "terms": "服務條款",
+    "privacy": "私隱政策"
+  },
+  "notFound": { "title": "404", "lede": "呢一頁唔喺度。", "cta": "返回首頁" },
+  "common": { "english": "English", "chinese": "繁體中文" }
 }
