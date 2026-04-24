@@ -1,5 +1,4 @@
 "use client";
-import { SplineScene } from "@/components/spline-scene";
 import { Button } from "@/components/ui/button";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import type { Locale } from "@/i18n";
@@ -44,17 +43,8 @@ export function Hero() {
           </a>
         </div>
       </motion.div>
-      <div className="relative h-[420px] md:h-[560px]">
-        <div
-          aria-hidden
-          className="absolute inset-[10%_5%] rounded-full bg-[radial-gradient(ellipse_at_35%_30%,#f5f5f7_0%,#ffffff_65%)]"
-        />
-        <SplineScene
-          scene="https://my.spline.design/molang3dcopy-fRSIeI2frDYN3teS19TJh9Zt/"
-          fallback="/hero-fallback.png"
-          alt="Binder 3D scene"
-          className="relative z-10 w-full h-full"
-        />
+      <div className="relative h-[420px] md:h-[560px] flex items-center justify-center">
+        <img src="/hero-molang.png" alt="Binder mascot" className="w-full h-full object-contain" />
       </div>
     </section>
   );
