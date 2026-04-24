@@ -1,1 +1,36 @@
-/* replaced in Task 4 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-feature-settings: "ss01", "cv11";
+  }
+  html[lang^="zh"] {
+    font-family: var(--font-noto-tc), var(--font-jakarta), system-ui, sans-serif;
+  }
+  body {
+    background: #ffffff;
+    color: #0a0a0c;
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid #0a0a0c;
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
