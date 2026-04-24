@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Binder app icon (light)">
+  <rect x="0" y="0" width="1024" height="1024" rx="229" ry="229" fill="#FFFFFF"/>
+  <rect x="261" y="292" width="450" height="553" rx="56" ry="56"
+        fill="none" stroke="#0A0A0C" stroke-width="29"/>
+  <rect x="313" y="251" width="450" height="553" rx="56" ry="56" fill="#FFFFFF"/>
+  <rect x="313" y="251" width="450" height="553" rx="56" ry="56"
+        fill="none" stroke="#0A0A0C" stroke-width="29"/>
+  <g>
+    <circle cx="313" cy="373" r="41" fill="#0A0A0C"/>
+    <circle cx="313" cy="373" r="12" fill="#FFFFFF"/>
+    <circle cx="313" cy="527" r="41" fill="#0A0A0C"/>
+    <circle cx="313" cy="527" r="12" fill="#FFFFFF"/>
+    <circle cx="313" cy="682" r="41" fill="#0A0A0C"/>
+    <circle cx="313" cy="682" r="12" fill="#FFFFFF"/>
+  </g>
+</svg>
