@@ -20,7 +20,7 @@ async function main() {
     viewport: { width: 600, height: 1200 },
     deviceScaleFactor: 2,
   });
-  await page.goto("http://localhost:3000/en/_dev/bake");
+  await page.goto("http://localhost:3000/en/dev/bake");
   for (const { name, selector } of screens) {
     const el = page.locator(selector);
     await el.screenshot({ path: path.join(outDir, `${name}.png`), omitBackground: true });
