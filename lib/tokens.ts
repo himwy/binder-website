@@ -2,7 +2,7 @@ export const colors = {
   bg: "#ffffff",
   surfaceAlt: "#fafafa",
   ink: "#0a0a0c",
-  muted: "#80808a",
+  muted: "#6d6d76",
   soft: "#b5b5bb",
   hairline: "#ececef",
   border: "#e3e3e8",

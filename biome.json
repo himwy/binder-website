@@ -17,6 +17,15 @@
     "lineWidth": 100
   },
   "files": {
-    "ignore": ["out", ".next", "node_modules", "public/spline", "public/screens", "scripts"]
+    "ignore": [
+      "out",
+      ".next",
+      "node_modules",
+      "public/spline",
+      "public/screens",
+      "scripts",
+      "test-results",
+      "playwright-report"
+    ]
   }
 }
