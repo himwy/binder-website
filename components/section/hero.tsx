@@ -44,7 +44,7 @@ export function Hero() {
         </div>
       </motion.div>
       <div className="relative h-[420px] md:h-[560px] flex items-center justify-center">
-        <img src="/hero-molang.png" alt="Binder mascot" className="w-full h-full object-contain" />
+        <img src="/mascot.png" alt="Binder mascot" className="w-full h-full object-contain" />
       </div>
     </section>
   );
