@@ -1,4 +1,7 @@
 {
   "cleanUrls": true,
-  "redirects": [{ "source": "/", "destination": "/en", "permanent": false }]
+  "redirects": [
+    { "source": "/", "destination": "/en", "permanent": false },
+    { "source": "/waitlist", "destination": "/en/waitlist", "permanent": false }
+  ]
 }
