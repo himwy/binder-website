@@ -1,6 +1,23 @@
 "use client";
-import { motion } from "framer-motion";
+import { animate, motion, useInView, useMotionValue, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { useEffect, useRef } from "react";
+
+function CountUp({ value }: { value: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true, margin: "-40px" });
+  const numeric = Number.parseFloat(value);
+  const isNumeric = Number.isFinite(numeric) && /^[\d.,]+$/.test(value.trim());
+  const mv = useMotionValue(0);
+  const display = useTransform(mv, (n) => Math.round(n).toString());
+  useEffect(() => {
+    if (!isNumeric || !inView) return;
+    const controls = animate(mv, numeric, { duration: 1.1, ease: "easeOut" });
+    return () => controls.stop();
+  }, [isNumeric, inView, numeric, mv]);
+  if (!isNumeric) return <span ref={ref}>{value}</span>;
+  return <motion.span ref={ref}>{display}</motion.span>;
+}
 
 export function Stats() {
   const t = useTranslations("stats");
@@ -20,7 +37,7 @@ export function Stats() {
             }`}
           >
             <div className="text-[clamp(40px,5vw,56px)] font-extrabold tracking-[-0.045em] leading-none tnum">
-              {t(`${k}.num`)}
+              <CountUp value={t(`${k}.num`)} />
             </div>
             <div className="text-[11px] font-extrabold tracking-[0.2em] uppercase text-muted">
               {t(`${k}.label`)}

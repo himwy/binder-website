@@ -5,7 +5,7 @@ export function PhoneFrame({ children, className }: { children: ReactNode; class
   return (
     <div
       className={clsx(
-        "relative w-[280px] h-[570px] rounded-phone-outer border border-border bg-gradient-to-br from-[#fafafa] to-white p-[10px]",
+        "relative w-[280px] h-[570px] rounded-phone-outer border border-border bg-gradient-to-br from-[#fafafa] to-white p-[10px] transition-transform duration-300 ease-out hover:-translate-y-1 will-change-transform",
         className,
       )}
     >

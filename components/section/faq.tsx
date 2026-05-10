@@ -12,9 +12,12 @@ export function FAQ() {
       <SectionHeading index={t("index")} kicker={t("kicker")} title={t("title")} />
       <div className="divide-y divide-hairline border-y border-hairline">
         {FAQ_ITEMS.map((item) => (
-          <details key={item.q.en} className="group py-5">
-            <summary className="flex justify-between items-center cursor-pointer list-none">
-              <span className="text-[16px] font-bold tracking-[-0.01em] max-w-[90%]">
+          <details
+            key={item.q.en}
+            className="group py-5 px-1 -mx-1 rounded-[8px] transition-colors hover:bg-surface-alt"
+          >
+            <summary className="flex justify-between items-center cursor-pointer list-none gap-6">
+              <span className="text-[16px] font-bold tracking-[-0.01em] max-w-[90%] group-hover:text-ink transition-colors">
                 {item.q[locale]}
               </span>
               <svg

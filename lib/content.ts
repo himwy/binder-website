@@ -103,3 +103,24 @@ export const DISTRICTS = [
   "Tuen Mun",
   "Tai Po",
 ];
+
+export const DISTRICTS_18: { en: string; zh: string }[] = [
+  { en: "Central", zh: "中西區" },
+  { en: "Wan Chai", zh: "灣仔" },
+  { en: "Eastern", zh: "東區" },
+  { en: "Southern", zh: "南區" },
+  { en: "Yau Tsim Mong", zh: "油尖旺" },
+  { en: "Sham Shui Po", zh: "深水埗" },
+  { en: "Kowloon City", zh: "九龍城" },
+  { en: "Wong Tai Sin", zh: "黃大仙" },
+  { en: "Kwun Tong", zh: "觀塘" },
+  { en: "Kwai Tsing", zh: "葵青" },
+  { en: "Tsuen Wan", zh: "荃灣" },
+  { en: "Tuen Mun", zh: "屯門" },
+  { en: "Yuen Long", zh: "元朗" },
+  { en: "North", zh: "北區" },
+  { en: "Tai Po", zh: "大埔" },
+  { en: "Sha Tin", zh: "沙田" },
+  { en: "Sai Kung", zh: "西貢" },
+  { en: "Islands", zh: "離島" },
+];
