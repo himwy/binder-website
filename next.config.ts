@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   trailingSlash: false,
   typedRoutes: true,
+  turbopack: { root: __dirname },
 };
 
 export default withNextIntl(nextConfig);
