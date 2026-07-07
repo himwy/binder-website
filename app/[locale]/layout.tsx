@@ -92,7 +92,7 @@ export default async function LocaleLayout({
               "@type": "Organization",
               name: "Binder",
               url: "https://binderhk.com",
-              logo: "https://binderhk.com/icons/binder-icon-dark.svg",
+              logo: "https://binderhk.com/icons/binder-icon-512.png",
               sameAs: ["https://instagram.com/binder_hk"],
             }),
           }}
