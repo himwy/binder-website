@@ -1,7 +1,6 @@
 import { Footer } from "@/components/footer";
 import { Nav } from "@/components/nav";
 import { BilingualProof } from "@/components/section/bilingual-proof";
-import { Districts } from "@/components/section/districts";
 import { FAQ } from "@/components/section/faq";
 import { Features } from "@/components/section/features";
 import { Hero } from "@/components/section/hero";
@@ -27,7 +26,6 @@ export default async function HomePage({
       <Nav />
       <main>
         <Hero />
-        <Districts />
         <Stats />
         <HowItWorks />
         <Features />

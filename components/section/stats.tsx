@@ -21,10 +21,10 @@ function CountUp({ value }: { value: string }) {
 
 export function Stats() {
   const t = useTranslations("stats");
-  const cells = ["districts", "bilingual", "launch"] as const;
+  const cells = ["bilingual", "launch"] as const;
   return (
     <section className="bg-surface-alt border-y border-hairline">
-      <div className="max-w-page mx-auto px-6 md:px-12 py-14 grid md:grid-cols-3">
+      <div className="max-w-page mx-auto px-6 md:px-12 py-14 grid md:grid-cols-2">
         {cells.map((k, i) => (
           <motion.div
             key={k}
@@ -33,7 +33,7 @@ export function Stats() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.4, delay: i * 0.08 }}
             className={`px-0 md:px-11 py-6 md:py-0 flex flex-col gap-3 ${
-              i < 2 ? "md:border-r border-b md:border-b-0 border-border" : ""
+              i < 1 ? "md:border-r border-b md:border-b-0 border-border" : ""
             }`}
           >
             <div className="text-[clamp(40px,5vw,56px)] font-extrabold tracking-[-0.045em] leading-none tnum">
