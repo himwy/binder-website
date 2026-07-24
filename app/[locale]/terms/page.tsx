@@ -1,7 +1,7 @@
 import { Footer } from "@/components/footer";
 import { LegalArticle } from "@/components/legal-article";
 import { Nav } from "@/components/nav";
-import { TERMS } from "@/lib/legal";
+import { getLegal } from "@/lib/legal";
 import { setRequestLocale } from "next-intl/server";
 
 export const metadata = {
@@ -16,7 +16,7 @@ export default async function Terms({ params }: { params: Promise<{ locale: stri
   return (
     <>
       <Nav />
-      <LegalArticle doc={TERMS} />
+      <LegalArticle doc={getLegal("terms", locale)} />
       <Footer />
     </>
   );
