@@ -18,7 +18,7 @@ export function GET() {
       message: null,
       ios: {
         minBuild: 1,
-        storeUrl: "itms-apps://apps.apple.com/app/idAPPLE_APP_ID",
+        storeUrl: "itms-apps://apps.apple.com/app/id6794384936",
       },
       android: {
         minBuild: 1,
