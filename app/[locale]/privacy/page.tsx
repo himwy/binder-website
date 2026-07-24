@@ -1,6 +1,14 @@
 import { Footer } from "@/components/footer";
+import { LegalArticle } from "@/components/legal-article";
 import { Nav } from "@/components/nav";
+import { PRIVACY } from "@/lib/legal";
 import { setRequestLocale } from "next-intl/server";
+
+export const metadata = {
+  title: "Binder — Privacy Policy",
+  description:
+    "How Near Mint collects, uses, and protects your personal data in the Binder app (Hong Kong PDPO).",
+};
 
 export default async function Privacy({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -8,12 +16,7 @@ export default async function Privacy({ params }: { params: Promise<{ locale: st
   return (
     <>
       <Nav />
-      <main className="max-w-[720px] mx-auto px-6 md:px-12 py-24">
-        <h1 className="text-[clamp(28px,4vw,44px)] font-extrabold tracking-[-0.035em] mb-8">
-          Privacy
-        </h1>
-        <p className="text-muted">Placeholder — legal copy forthcoming before public launch.</p>
-      </main>
+      <LegalArticle doc={PRIVACY} />
       <Footer />
     </>
   );

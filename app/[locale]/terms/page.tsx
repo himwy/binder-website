@@ -1,6 +1,14 @@
 import { Footer } from "@/components/footer";
+import { LegalArticle } from "@/components/legal-article";
 import { Nav } from "@/components/nav";
+import { TERMS } from "@/lib/legal";
 import { setRequestLocale } from "next-intl/server";
+
+export const metadata = {
+  title: "Binder — Terms of Service",
+  description:
+    "The terms that govern your use of the Binder trading app, operated by Near Mint (Hong Kong).",
+};
 
 export default async function Terms({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -8,12 +16,7 @@ export default async function Terms({ params }: { params: Promise<{ locale: stri
   return (
     <>
       <Nav />
-      <main className="max-w-[720px] mx-auto px-6 md:px-12 py-24">
-        <h1 className="text-[clamp(28px,4vw,44px)] font-extrabold tracking-[-0.035em] mb-8">
-          Terms
-        </h1>
-        <p className="text-muted">Placeholder — legal copy forthcoming before public launch.</p>
-      </main>
+      <LegalArticle doc={TERMS} />
       <Footer />
     </>
   );
