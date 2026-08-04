@@ -1,5 +1,5 @@
 "use client";
-import { DistrictGrid } from "@/components/mockup/district-grid";
+import { ChatOffer } from "@/components/mockup/chat-offer";
 import { ListingDetail } from "@/components/mockup/listing-detail";
 import { NewListing } from "@/components/mockup/new-listing";
 import { PhoneFrame } from "@/components/phone-frame";
@@ -9,8 +9,8 @@ import { useTranslations } from "next-intl";
 
 const blocks = [
   { key: "pairs", Mock: NewListing },
-  { key: "pricing", Mock: ListingDetail },
-  { key: "district", Mock: DistrictGrid },
+  { key: "matching", Mock: ListingDetail },
+  { key: "offers", Mock: ChatOffer },
 ] as const;
 
 export function Features() {

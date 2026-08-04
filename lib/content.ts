@@ -15,8 +15,8 @@ export const HOW_IT_WORKS_STEPS: Step[] = [
     num: "01",
     title: { en: "Sign in", zh: "登入" },
     body: {
-      en: "One tap with Google or Apple. Pick a handle. Pick a home district.",
-      zh: "Google 或 Apple 一鍵登入。揀個名,揀個常去嘅區。",
+      en: "One tap with Google or Apple. Pick a handle. You are in.",
+      zh: "Google 或 Apple 一鍵登入。揀個用戶名,就可以開始。",
     },
     why: { en: "Bilingual from the welcome screen.", zh: "由歡迎頁開始就雙語。" },
     screen: "onboarding",
@@ -25,8 +25,8 @@ export const HOW_IT_WORKS_STEPS: Step[] = [
     num: "02",
     title: { en: "Post a trade", zh: "發佈交易" },
     body: {
-      en: "Pair what you have with what you want. Add cash to balance. Prices auto-pull in HKD.",
-      zh: "配對你有嘅卡同想要嘅卡。可以加現金補差價。價錢自動用港幣顯示。",
+      en: "Pair what you have with what you want. Add cash to balance.",
+      zh: "配對你有嘅卡同想要嘅卡。可以加現金補差價。",
     },
     why: { en: "Pairs beat posts.", zh: "配對勝於貼文。" },
     screen: "new-listing",
@@ -45,8 +45,8 @@ export const HOW_IT_WORKS_STEPS: Step[] = [
     num: "04",
     title: { en: "Meet & rate", zh: "見面評分" },
     body: {
-      en: "Pick a district, meet in person, trade. Rate the other trader.",
-      zh: "揀個區,面對面交收。之後互相評分。",
+      en: "Agree in chat, meet in person, trade. Rate the other trader.",
+      zh: "喺對話傾掂,面對面交收。之後互相評分。",
     },
     why: { en: "Reputation compounds.", zh: "聲譽會累積。" },
     screen: "rating",
@@ -59,8 +59,8 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     q: { en: "When does Binder launch?", zh: "Binder 幾時推出?" },
     a: {
-      en: "Beta opens Summer 2026 for Hong Kong collectors. Public launch follows.",
-      zh: "2026 年夏季會開放測試版俾香港收藏家。之後會正式公開推出。",
+      en: "A closed beta is running now with Hong Kong collectors. Public launch follows.",
+      zh: "而家正同香港收藏家進行封閉測試。之後會正式公開推出。",
     },
   },
   {

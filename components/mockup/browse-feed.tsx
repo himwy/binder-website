@@ -28,7 +28,7 @@ const rows: Row[] = [
   },
   {
     title: "Mewtwo ex · S&V",
-    meta: "@marcus_hk · Sha Tin",
+    meta: "@marcus_hk · 2 days ago",
     lang: "EN",
     color: "bg-gradient-to-br from-[#e8e4f3] to-[#c9c0e0]",
     tags: [{ variant: "paused", label: "PAUSED" }],

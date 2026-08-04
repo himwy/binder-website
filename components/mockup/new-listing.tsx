@@ -17,7 +17,7 @@ export function NewListing() {
         <div className="text-muted text-[9px]">Balancing difference</div>
       </div>
       <div className="mt-auto mx-[6px] mb-[10px] px-[10px] py-[8px] text-[10px] text-muted">
-        Meet in: Sha Tin
+        Open to offers
       </div>
     </>
   );
