@@ -8,7 +8,15 @@ export function FAQ() {
   const t = useTranslations("faq");
   const locale = useLocale() as Locale;
   return (
-    <section id="faq" className="max-w-[720px] mx-auto px-6 md:px-12 py-20 md:py-28">
+    <section id="faq" className="relative max-w-[720px] mx-auto px-6 md:px-12 py-20 md:py-28">
+      <img
+        src="/bindy/bindy-sticker.webp"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+        className="hidden md:block absolute right-6 top-16 w-[132px] rotate-6 pointer-events-none select-none"
+      />
       <SectionHeading index={t("index")} kicker={t("kicker")} title={t("title")} />
       <div className="divide-y divide-hairline border-y border-hairline">
         {FAQ_ITEMS.map((item) => (

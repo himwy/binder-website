@@ -7,5 +7,7 @@ test("toggle flips URL and html lang", async ({ page }) => {
   await expect(page).toHaveURL(/\/zh\/?$/);
   await expect(page.locator("html")).toHaveAttribute("lang", "zh-Hant");
   await page.getByRole("link", { name: /EN/i }).click();
-  await expect(page).toHaveURL(/\/en\/?$/);
+  // localePrefix "as-needed": the default locale lives at "/" (or "/en" in dev)
+  await expect(page).toHaveURL(/^https?:\/\/[^/]+\/(en)?\/?$/);
+  await expect(page.locator("html")).toHaveAttribute("lang", "en");
 });

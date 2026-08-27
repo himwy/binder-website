@@ -49,10 +49,14 @@ export function Hero() {
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
         className="relative h-[420px] md:h-[560px] flex items-center justify-center"
       >
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 top-1/2 -translate-y-1/2 mx-auto w-[78%] aspect-square rounded-full bg-[#fff3dd] blur-2xl opacity-80"
+        />
         <img
-          src="/mascot.png"
-          alt="Binder mascot"
-          className="w-full h-full object-contain animate-float will-change-transform"
+          src="/bindy/bindy-eager.webp"
+          alt={t("mascotAlt")}
+          className="relative max-h-[86%] w-auto object-contain animate-float will-change-transform"
         />
       </motion.div>
     </section>

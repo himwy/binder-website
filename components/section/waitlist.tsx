@@ -19,6 +19,13 @@ export function Waitlist() {
         transition={{ duration: 0.5 }}
         className="max-w-[640px] mx-auto px-6"
       >
+        <img
+          src="/bindy/bindy-proud.webp"
+          alt={t("mascotAlt")}
+          loading="lazy"
+          decoding="async"
+          className="mx-auto mb-8 h-[150px] md:h-[180px] w-auto animate-float will-change-transform"
+        />
         <Eyebrow className="mb-5">{t("eyebrow")}</Eyebrow>
         <h2 className="text-[clamp(34px,5vw,56px)] font-extrabold tracking-[-0.035em] leading-[1.02] mb-6">
           {t("title")}

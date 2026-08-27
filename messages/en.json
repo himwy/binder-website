@@ -11,7 +11,8 @@
     "titleLine2": "Meet in person.",
     "lede": "Hong Kong's Pokémon trading board — designed for collectors who want real trades, face to face.",
     "cta": "Join the waitlist",
-    "secondary": "Watch the tour"
+    "secondary": "Watch the tour",
+    "mascotAlt": "Bindy, the Binder shiba, happily showing off a trading card"
   },
   "stats": {
     "bilingual": {
@@ -60,7 +61,8 @@
     "title": "Be there on launch day.",
     "body": "A small group of Hong Kong collectors, selected from the waitlist, get early access. First-come, first-served.",
     "cta": "Join the waitlist",
-    "micro": "No spam. One email when we open. Unsubscribe whenever."
+    "micro": "No spam. One email when we open. Unsubscribe whenever.",
+    "mascotAlt": "Bindy the shiba proudly holding up a sparkling card"
   },
   "footer": {
     "copyright": "© 2026 Near Mint · Hong Kong",
@@ -70,8 +72,9 @@
   },
   "notFound": {
     "title": "404",
-    "lede": "This page isn't in the binder.",
-    "cta": "Back to home"
+    "lede": "Bindy checked every pocket — this page isn't in the binder.",
+    "cta": "Back to home",
+    "mascotAlt": "Bindy the shiba sadly hugging an empty binder"
   },
   "common": {
     "english": "English",

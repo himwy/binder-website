@@ -11,7 +11,8 @@
     "titleLine2": "交換每一張卡。",
     "lede": "為香港收藏家而設的寶可夢卡牌交換平台。不用寄，面對面。",
     "cta": "加入候補名單",
-    "secondary": "看看產品介紹"
+    "secondary": "看看產品介紹",
+    "mascotAlt": "Binder 吉祥物 Bindy 開心咁展示一張卡牌"
   },
   "stats": {
     "bilingual": {
@@ -60,7 +61,8 @@
     "title": "加入第一批用戶。",
     "body": "由候補名單揀選一小撮香港收藏家搶先體驗。先到先得。",
     "cta": "加入候補名單",
-    "micro": "唔會騷擾你。開放嗰日先會寄一封。"
+    "micro": "唔會騷擾你。開放嗰日先會寄一封。",
+    "mascotAlt": "Bindy 自豪咁舉起一張閃卡"
   },
   "footer": {
     "copyright": "© 2026 Near Mint · Hong Kong",
@@ -70,8 +72,9 @@
   },
   "notFound": {
     "title": "404",
-    "lede": "呢一頁唔喺度。",
-    "cta": "返回首頁"
+    "lede": "Bindy 揭勻成本卡簿，都搵唔到呢一頁。",
+    "cta": "返回首頁",
+    "mascotAlt": "Bindy 攬住本空嘅卡簿，好唔開心"
   },
   "common": {
     "english": "English",
