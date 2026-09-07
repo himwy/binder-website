@@ -55,8 +55,8 @@ export async function generateMetadata({
     },
     twitter: { card: "summary_large_image", title, description, images: [`/og/${locale}`] },
     icons: {
-      icon: "/favicon.ico?v=2",
-      apple: "/icons/apple-touch-icon.png?v=2",
+      icon: "/favicon.ico?v=3",
+      apple: "/icons/apple-touch-icon.png?v=3",
     },
     robots: { index: true, follow: true },
   };
