@@ -29,8 +29,8 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "hero" });
   const title =
     locale === "zh"
-      ? "Binder — 香港寶可夢卡牌交換平台"
-      : "Binder — Hong Kong's Pokémon trading board";
+      ? "Bindy — 香港寶可夢卡牌交換平台"
+      : "Bindy — Hong Kong's Pokémon trading board";
   const description = t("lede");
   const url = `https://binderhk.com${locale === "en" ? "" : `/${locale}`}`;
   return {
@@ -48,7 +48,7 @@ export async function generateMetadata({
       title,
       description,
       url,
-      siteName: "Binder",
+      siteName: "Bindy",
       locale: locale === "zh" ? "zh_HK" : "en_HK",
       type: "website",
       images: [{ url: `/og/${locale}`, width: 1200, height: 630, alt: title }],
@@ -90,7 +90,7 @@ export default async function LocaleLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Binder",
+              name: "Bindy",
               url: "https://binderhk.com",
               logo: "https://binderhk.com/icons/binder-icon-512.png",
               sameAs: ["https://instagram.com/binder_hk"],

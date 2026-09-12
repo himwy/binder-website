@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-// Force-update / maintenance config consumed by the Binder mobile app
+// Force-update / maintenance config consumed by the Bindy mobile app
 // (lib/appConfig.ts checkAppGate). This is the app's remote kill-switch:
 //   - bump `minBuild` to force every build below it to update (the app compares
 //     the NATIVE build number — iOS buildNumber / Android versionCode)

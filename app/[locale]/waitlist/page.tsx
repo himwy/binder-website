@@ -15,7 +15,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const url = getWaitlistUrl();
-  const title = locale === "zh" ? "Binder — 加入候補名單" : "Binder — Join the waitlist";
+  const title = locale === "zh" ? "Bindy — 加入候補名單" : "Bindy — Join the waitlist";
   return {
     title,
     robots: { index: false, follow: false },

@@ -57,7 +57,7 @@ export type FaqItem = { q: Localized; a: Localized };
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    q: { en: "When does Binder launch?", zh: "Binder 幾時推出?" },
+    q: { en: "When does Bindy launch?", zh: "Bindy 幾時推出?" },
     a: {
       en: "A closed beta is running now with Hong Kong collectors. Public launch follows.",
       zh: "而家正同香港收藏家進行封閉測試。之後會正式公開推出。",
@@ -78,10 +78,10 @@ export const FAQ_ITEMS: FaqItem[] = [
     },
   },
   {
-    q: { en: "Does Binder support shipping?", zh: "可唔可以寄卡?" },
+    q: { en: "Does Bindy support shipping?", zh: "可唔可以寄卡?" },
     a: {
-      en: "No — Binder is in-person only by design. Shipping creates scam surface we don't want.",
-      zh: "唔可以。Binder 設計上只限面對面交收。寄卡會產生我哋唔想要嘅詐騙風險。",
+      en: "No — Bindy is in-person only by design. Shipping creates scam surface we don't want.",
+      zh: "唔可以。Bindy 設計上只限面對面交收。寄卡會產生我哋唔想要嘅詐騙風險。",
     },
   },
   {

@@ -5,9 +5,9 @@ import { getLegal } from "@/lib/legal";
 import { setRequestLocale } from "next-intl/server";
 
 export const metadata = {
-  title: "Binder — Privacy Policy",
+  title: "Bindy — Privacy Policy",
   description:
-    "How Near Mint collects, uses, and protects your personal data in the Binder app (Hong Kong PDPO).",
+    "How Near Mint collects, uses, and protects your personal data in the Bindy app (Hong Kong PDPO).",
 };
 
 export default async function Privacy({ params }: { params: Promise<{ locale: string }> }) {

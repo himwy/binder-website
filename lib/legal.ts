@@ -1,5 +1,5 @@
-// Public legal documents for Binder (binderhk.com). Mirrors the in-app copy
-// (Binder app lib/legal.ts) in English + Traditional Chinese. Hosted publicly so
+// Public legal documents for Bindy (binderhk.com). Mirrors the in-app copy
+// (Bindy app lib/legal.ts) in English + Traditional Chinese. Hosted publicly so
 // the App Store / Play Console have a reachable Privacy Policy + Terms URL.
 //
 // Recommended (not required): have HK counsel review the substantive clauses
@@ -16,7 +16,7 @@ export type LegalDoc = {
 export type LegalKind = "terms" | "privacy";
 
 const COMPANY = "Near Mint";
-const APP = "Binder";
+const APP = "Bindy";
 const UPDATED = "28 July 2026";
 const PRIVACY_UPDATED = "4 August 2026";
 const UPDATED_TC_DOC = "2026年7月28日";
@@ -126,7 +126,7 @@ const EN: Record<LegalKind, LegalDoc> = {
       {
         heading: "4. Service providers",
         text:
-          "We use trusted third-party providers to run the Service. Each one receives only what it needs:\n\n• Cloud backend and hosting (Appwrite Cloud, servers in Singapore) — stores your account, profile, listings, photos, messages, ratings and reports on our behalf.\n\n• Sign-in providers (Google and Apple) — you authenticate with them and they tell us your name and email address. We do not send them your listings or messages.\n\n• Push notifications (Expo, operated by 650 Industries, servers in the United States, and then Apple's Push Notification service) — when another trader messages you or sends you an offer, we send Expo your device's push token, the sender's display name, and a short preview of the notification so it can appear on your lock screen. For a text message that preview contains up to the first 200 characters of the message itself (after our automatic link/contact scrub); for a photo or an offer it is only a placeholder such as \"Photo\" or \"offer\". Message content sent this way therefore leaves Hong Kong. If you do not want this, turn Binder notifications off in your device settings — the Service works without them and no preview is sent.\n\n• Trading-card data (Scrydex, servers outside Hong Kong) — receives only the search text and card identifiers used to look up card information. It never receives your account, name, listings or messages.\n\n• Crash reporting and performance monitoring (Sentry, servers in the United States) — receives diagnostic data such as error reports, device model, OS version and app version when something goes wrong. We keep personal identifiers out of these reports.\n\nThese providers process data on our instructions and/or under their own privacy terms. We do not sell your personal data.",
+          "We use trusted third-party providers to run the Service. Each one receives only what it needs:\n\n• Cloud backend and hosting (Appwrite Cloud, servers in Singapore) — stores your account, profile, listings, photos, messages, ratings and reports on our behalf.\n\n• Sign-in providers (Google and Apple) — you authenticate with them and they tell us your name and email address. We do not send them your listings or messages.\n\n• Push notifications (Expo, operated by 650 Industries, servers in the United States, and then Apple's Push Notification service) — when another trader messages you or sends you an offer, we send Expo your device's push token, the sender's display name, and a short preview of the notification so it can appear on your lock screen. For a text message that preview contains up to the first 200 characters of the message itself (after our automatic link/contact scrub); for a photo or an offer it is only a placeholder such as \"Photo\" or \"offer\". Message content sent this way therefore leaves Hong Kong. If you do not want this, turn Bindy notifications off in your device settings — the Service works without them and no preview is sent.\n\n• Trading-card data (Scrydex, servers outside Hong Kong) — receives only the search text and card identifiers used to look up card information. It never receives your account, name, listings or messages.\n\n• Crash reporting and performance monitoring (Sentry, servers in the United States) — receives diagnostic data such as error reports, device model, OS version and app version when something goes wrong. We keep personal identifiers out of these reports.\n\nThese providers process data on our instructions and/or under their own privacy terms. We do not sell your personal data.",
       },
       {
         heading: "5. Data retention",
@@ -268,7 +268,7 @@ const ZH: Record<LegalKind, LegalDoc> = {
       {
         heading: "4. 服務供應商",
         text:
-          "我們使用值得信賴的第三方供應商營運本服務。每個供應商只會取得其所需的資料：\n\n• 雲端後台及主機（Appwrite Cloud，伺服器位於新加坡）——代我們儲存閣下的帳戶、個人資料、刊登資訊、相片、訊息、評分及舉報。\n\n• 登入服務供應商（Google 及 Apple）——閣下透過它們驗證身分，它們會向我們提供閣下的姓名及電郵地址。我們不會向它們傳送閣下的刊登資訊或訊息。\n\n• 推播通知（Expo，由 650 Industries 營運，伺服器位於美國，其後經 Apple 推播通知服務送達）——當其他交易者向閣下發送訊息或出價時，我們會將閣下裝置的推播權杖、發送者的顯示名稱，以及一段簡短的通知預覽傳送給 Expo，以便在閣下的鎖定畫面顯示。文字訊息的預覽會包含該訊息本身的首 200 個字元（已經過我們自動移除連結／聯絡方式的處理）；相片或出價的預覽則只是「相片」或「出價」等替代文字。因此，以此方式傳送的訊息內容會離開香港。如閣下不希望如此，可在裝置設定中關閉 Binder 的通知——本服務在沒有通知的情況下仍可使用，屆時亦不會傳送任何預覽。\n\n• 交易卡資料（Scrydex，伺服器位於香港境外）——只會接收用於查詢卡牌資料的搜尋文字及卡牌編號，絕不會接收閣下的帳戶、姓名、刊登資訊或訊息。\n\n• 崩潰報告及效能監測（Sentry，伺服器位於美國）——在應用程式發生錯誤時接收診斷資料，例如錯誤報告、裝置型號、系統版本及應用程式版本。我們會避免在該等報告中加入個人身分識別資料。\n\n該等供應商按我們的指示及/或其自身的私隱條款處理資料。我們不會出售閣下的個人資料。",
+          "我們使用值得信賴的第三方供應商營運本服務。每個供應商只會取得其所需的資料：\n\n• 雲端後台及主機（Appwrite Cloud，伺服器位於新加坡）——代我們儲存閣下的帳戶、個人資料、刊登資訊、相片、訊息、評分及舉報。\n\n• 登入服務供應商（Google 及 Apple）——閣下透過它們驗證身分，它們會向我們提供閣下的姓名及電郵地址。我們不會向它們傳送閣下的刊登資訊或訊息。\n\n• 推播通知（Expo，由 650 Industries 營運，伺服器位於美國，其後經 Apple 推播通知服務送達）——當其他交易者向閣下發送訊息或出價時，我們會將閣下裝置的推播權杖、發送者的顯示名稱，以及一段簡短的通知預覽傳送給 Expo，以便在閣下的鎖定畫面顯示。文字訊息的預覽會包含該訊息本身的首 200 個字元（已經過我們自動移除連結／聯絡方式的處理）；相片或出價的預覽則只是「相片」或「出價」等替代文字。因此，以此方式傳送的訊息內容會離開香港。如閣下不希望如此，可在裝置設定中關閉 Bindy 的通知——本服務在沒有通知的情況下仍可使用，屆時亦不會傳送任何預覽。\n\n• 交易卡資料（Scrydex，伺服器位於香港境外）——只會接收用於查詢卡牌資料的搜尋文字及卡牌編號，絕不會接收閣下的帳戶、姓名、刊登資訊或訊息。\n\n• 崩潰報告及效能監測（Sentry，伺服器位於美國）——在應用程式發生錯誤時接收診斷資料，例如錯誤報告、裝置型號、系統版本及應用程式版本。我們會避免在該等報告中加入個人身分識別資料。\n\n該等供應商按我們的指示及/或其自身的私隱條款處理資料。我們不會出售閣下的個人資料。",
       },
       {
         heading: "5. 資料保留",

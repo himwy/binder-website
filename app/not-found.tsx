@@ -16,7 +16,7 @@ const notoTc = Noto_Sans_TC({
 });
 
 export const metadata: Metadata = {
-  title: "Binder — 404",
+  title: "Bindy — 404",
   robots: { index: false },
   icons: { icon: "/favicon.ico?v=2", apple: "/icons/apple-touch-icon.png?v=2" },
 };
@@ -36,7 +36,7 @@ export default function GlobalNotFound() {
               height={26}
               className="object-contain"
             />
-            <span className="text-[16px] font-bold tracking-[-0.015em] text-ink">Binder</span>
+            <span className="text-[16px] font-bold tracking-[-0.015em] text-ink">Bindy</span>
           </a>
           <img
             src="/bindy/bindy-sad.webp"

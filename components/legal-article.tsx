@@ -4,7 +4,7 @@ export function LegalArticle({ doc }: { doc: LegalDoc }) {
   return (
     <main className="max-w-[720px] mx-auto px-6 md:px-12 py-24">
       <p className="text-xs uppercase tracking-[0.16em] text-muted mb-4">
-        Binder · Legal
+        Bindy · Legal
       </p>
       <h1 className="text-[clamp(28px,4vw,44px)] font-extrabold tracking-[-0.035em] mb-2">
         {doc.title}

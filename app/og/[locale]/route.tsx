@@ -34,7 +34,7 @@ export async function GET(_req: Request, { params }: { params: Promise<{ locale:
         {title}
       </div>
       <div style={{ position: "absolute", bottom: 80, left: 80, fontSize: 22, fontWeight: 700 }}>
-        Binder — binderhk.com
+        Bindy — binderhk.com
       </div>
     </div>,
     { width: 1200, height: 630 },

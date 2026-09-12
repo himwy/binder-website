@@ -39,7 +39,7 @@ export function BrowseFeed() {
   return (
     <>
       <div className="flex justify-between items-center pb-[14px] px-[6px] border-b border-hairline">
-        <span className="text-[15px] font-extrabold tracking-[-0.015em]">Binder</span>
+        <span className="text-[15px] font-extrabold tracking-[-0.015em]">Bindy</span>
         <span className="w-[26px] h-[26px] rounded-full bg-ink text-white text-[10px] font-extrabold flex items-center justify-center">
           MH
         </span>
