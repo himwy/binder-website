@@ -131,7 +131,7 @@ const EN: Record<LegalKind, LegalDoc> = {
       {
         heading: "5. Data retention",
         text:
-          "We keep your personal data for as long as your account is active or as needed to provide the Service, comply with legal obligations, resolve disputes, and enforce our agreements. When you delete your account, we delete or anonymise your personal data within a reasonable period, except where retention is required by law.",
+          "We keep your personal data for as long as your account is active or as needed to provide the Service, comply with legal obligations, resolve disputes, and enforce our agreements. When you delete your account it is deactivated immediately and permanently erased after 30 days; we keep it longer only while a report against it is under investigation, or where retention is required by law. Once erased, any personal data that must be kept is anonymised.",
       },
       {
         heading: "6. Your rights",
@@ -273,7 +273,7 @@ const ZH: Record<LegalKind, LegalDoc> = {
       {
         heading: "5. 資料保留",
         text:
-          "只要閣下的帳戶維持有效，或基於提供本服務、遵守法律義務、解決爭議及執行協議所需，我們便會保留閣下的個人資料。當閣下刪除帳戶後，我們會在合理期間內刪除或匿名化閣下的個人資料，惟法律另有規定須保留的除外。",
+          "只要閣下的帳戶維持有效，或基於提供本服務、遵守法律義務、解決爭議及執行協議所需，我們便會保留閣下的個人資料。當閣下刪除帳戶時，帳戶會即時停用，並於 30 天後永久清除；只有在針對該帳戶的舉報仍在調查期間，或法律另有規定須保留的情況下，我們才會保留更長時間。清除後，任何須保留的個人資料均會匿名化。",
       },
       {
         heading: "6. 閣下的權利",
