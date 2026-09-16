@@ -13,7 +13,7 @@ export type LegalDoc = {
   intro: string;
   sections: LegalSection[];
 };
-export type LegalKind = "terms" | "privacy";
+export type LegalKind = "terms" | "privacy" | "delete-account";
 
 const COMPANY = "Near Mint";
 const APP = "Bindy";
@@ -21,10 +21,52 @@ const UPDATED = "28 July 2026";
 const PRIVACY_UPDATED = "4 August 2026";
 const UPDATED_TC_DOC = "2026年7月28日";
 const PRIVACY_UPDATED_TC = "2026年8月4日";
+// Google Play requires a publicly reachable account-deletion page that names
+// the app, lists the steps, and states what is erased and what is retained.
+const DELETE_UPDATED = "16 September 2026";
+const DELETE_UPDATED_TC = "2026年9月16日";
 
 const CONTACT = "contact@nearmint.tech";
 
 const EN: Record<LegalKind, LegalDoc> = {
+  "delete-account": {
+    title: "Delete your Bindy account",
+    updated: DELETE_UPDATED,
+    intro:
+      "Bindy is published by Near Mint. You can delete your Bindy account and its data from inside the app at any time — you do not need to contact us, and there is no charge.",
+    sections: [
+      {
+        heading: "How to delete your account",
+        text:
+          "1. Open the Bindy app and sign in.\n2. Go to the Me tab.\n3. Tap Settings.\n4. Tap Delete account.\n5. Confirm.\n\nYour account is deactivated immediately: you are signed out on every device, your profile stops being visible to other traders, your live listings are closed, and offers you have made or received are withdrawn.",
+      },
+      {
+        heading: "What is deleted",
+        text:
+          "Thirty days after you ask us to delete it, the account and everything attached to it are erased permanently and cannot be recovered: your profile (display name, handle, bio, avatar, district), your listings and the photos you uploaded, your offers, your chat threads and messages, your saved listings, your ratings, your blocks, and your push-notification registration.",
+      },
+      {
+        heading: "The 30-day window",
+        text:
+          "Deletion is not instant. For 30 days the deactivated account is kept so you can change your mind: sign in again within that period and the app offers to restore it. After 30 days a daily job erases it and nothing can bring it back.",
+      },
+      {
+        heading: "What we keep, and for how long",
+        text:
+          "Reports that you filed about other traders are kept, with your identity removed from them, because they document another person's conduct rather than yours. Ratings you left for other traders remain on their profile, shown without your name. If an open report about your account is under investigation when you ask to delete it, we keep the account until that investigation closes, then erase it. Server logs and crash reports that may contain a technical identifier expire on their own within 90 days.",
+      },
+      {
+        heading: "Deleting some data without deleting your account",
+        text:
+          "You do not have to delete the whole account to remove content: close or delete an individual listing and its photos from the Me tab, change or clear your avatar, bio and district in Edit profile, and unsave any listing at any time. For anything else, email contact@nearmint.tech and we will action the request under the Hong Kong PDPO.",
+      },
+      {
+        heading: "Questions",
+        text:
+          "Email contact@nearmint.tech. Our full Privacy Policy is at binderhk.com/en/privacy.",
+      },
+    ],
+  },
   terms: {
     title: "Terms of Service",
     updated: UPDATED,
@@ -167,6 +209,44 @@ const EN: Record<LegalKind, LegalDoc> = {
 };
 
 const ZH: Record<LegalKind, LegalDoc> = {
+  "delete-account": {
+    title: "刪除你的 Bindy 帳戶",
+    updated: DELETE_UPDATED_TC,
+    intro:
+      "Bindy 由 Near Mint 發行。你可以隨時在應用程式內刪除 Bindy 帳戶及相關資料，無須聯絡我們，亦不收取任何費用。",
+    sections: [
+      {
+        heading: "如何刪除帳戶",
+        text:
+          "1. 開啟 Bindy 並登入。\n2. 前往「我」分頁。\n3. 輕按「設定」。\n4. 輕按「刪除帳戶」。\n5. 確認。\n\n帳戶會即時停用：所有裝置登出、個人檔案不再向其他交易者顯示、進行中的刊登關閉，你發出及收到的出價亦會撤回。",
+      },
+      {
+        heading: "會刪除甚麼",
+        text:
+          "在你提出刪除要求 30 天後，帳戶及其所有相關資料會永久刪除，無法復原：個人檔案（顯示名稱、用戶名、簡介、頭像、地區）、你的刊登及上載的相片、你的出價、你的聊天室及訊息、已收藏的刊登、你的評價、封鎖名單，以及推播通知登記。",
+      },
+      {
+        heading: "30 天緩衝期",
+        text:
+          "刪除並非即時執行。帳戶停用後會保留 30 天，讓你改變主意：在這段期間重新登入，應用程式會讓你恢復帳戶。30 天後，每日的清理程序會永久刪除帳戶，屆時無法復原。",
+      },
+      {
+        heading: "我們會保留甚麼、保留多久",
+        text:
+          "你就其他交易者提交的舉報會保留，但會移除你的身分資料，因為該等紀錄描述的是他人的行為而非你的。你為其他交易者留下的評價會繼續顯示在對方的個人檔案，但不會顯示你的名稱。如你提出刪除要求時，有關你帳戶的舉報正在調查中，我們會保留該帳戶直至調查完結，其後刪除。可能載有技術識別碼的伺服器日誌及當機報告會於 90 天內自動失效。",
+      },
+      {
+        heading: "不刪除帳戶而刪除部分資料",
+        text:
+          "你毋須刪除整個帳戶亦可移除內容：在「我」分頁關閉或刪除個別刊登及其相片、在「編輯個人檔案」更改或清除頭像、簡介和地區、隨時取消收藏任何刊登。其他要求請電郵至 contact@nearmint.tech，我們會按香港《個人資料（私隱）條例》處理。",
+      },
+      {
+        heading: "查詢",
+        text:
+          "請電郵至 contact@nearmint.tech。完整私隱政策：binderhk.com/zh/privacy。",
+      },
+    ],
+  },
   terms: {
     title: "服務條款",
     updated: UPDATED_TC_DOC,
