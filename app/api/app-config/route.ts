@@ -17,7 +17,11 @@ export function GET() {
       maintenance: false,
       message: null,
       ios: {
-        minBuild: 1,
+        // 41 = the build behind App Store version 1.2, live since 2026-09-14
+        // (verified via the public iTunes lookup before this was raised — raising
+        // it earlier would trap 1.0/1.1 users on an update screen pointing at a
+        // store that did not yet have 1.2). Raise to 43 once 1.2.1 is live.
+        minBuild: 41,
         storeUrl: "itms-apps://apps.apple.com/app/id6794384936",
       },
       android: {
