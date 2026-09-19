@@ -1,51 +1,34 @@
-"use client";
-import { ChatOffer } from "@/components/mockup/chat-offer";
-import { ListingDetail } from "@/components/mockup/listing-detail";
-import { NewListing } from "@/components/mockup/new-listing";
-import { PhoneFrame } from "@/components/phone-frame";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import type { Locale } from "@/i18n";
+import { FEATURES } from "@/lib/content";
+import { useLocale, useTranslations } from "next-intl";
 
-const blocks = [
-  { key: "pairs", Mock: NewListing },
-  { key: "matching", Mock: ListingDetail },
-  { key: "offers", Mock: ChatOffer },
-] as const;
-
+/** Scenes sit in their frames as photographs — never cut out, never floating. */
 export function Features() {
   const t = useTranslations("features");
+  const locale = useLocale() as Locale;
   return (
-    <section id="features" className="max-w-page mx-auto px-6 md:px-12 py-20 md:py-32">
+    <section id="features" className="mx-auto max-w-page px-6 py-20 md:px-12 md:py-28">
       <SectionHeading index={t("index")} kicker={t("kicker")} title={t("title")} />
-      <div className="flex flex-col gap-20 md:gap-28">
-        {blocks.map(({ key, Mock }, i) => (
-          <motion.div
-            key={key}
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.5 }}
-            className={`grid md:grid-cols-2 gap-10 md:gap-16 items-center ${
-              i % 2 === 1
-                ? "md:[&>*:first-child]:col-start-2 md:[&>*:last-child]:col-start-1 md:[&>*:last-child]:row-start-1"
-                : ""
-            }`}
-          >
-            <div>
-              <h3 className="text-[clamp(22px,2.6vw,32px)] font-extrabold tracking-[-0.025em] mb-4">
-                {t(`${key}.title`)}
-              </h3>
-              <p className="text-[14.5px] text-muted leading-[1.6] max-w-[46ch] font-medium">
-                {t(`${key}.body`)}
-              </p>
+      <div className="grid gap-8 md:grid-cols-3">
+        {FEATURES.map((feature) => (
+          <figure key={feature.key}>
+            <div className="aspect-[4/3] overflow-hidden rounded-card bg-green-tint shadow-[0_16px_34px_rgba(20,23,26,0.10)]">
+              <img
+                src={feature.scene}
+                alt={feature.alt[locale]}
+                width={1100}
+                height={825}
+                loading="lazy"
+                decoding="async"
+                className="h-full w-full object-cover"
+              />
             </div>
-            <div className="flex justify-center">
-              <PhoneFrame>
-                <Mock />
-              </PhoneFrame>
-            </div>
-          </motion.div>
+            <figcaption>
+              <h3 className="mt-5 text-[20px] font-bold text-ink">{feature.title[locale]}</h3>
+              <p className="mt-2 text-[16px] text-muted">{feature.body[locale]}</p>
+            </figcaption>
+          </figure>
         ))}
       </div>
     </section>

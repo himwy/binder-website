@@ -3,20 +3,20 @@ import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
-import { Noto_Sans_TC, Plus_Jakarta_Sans } from "next/font/google";
+import { Funnel_Display, Funnel_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
 
-const jakarta = Plus_Jakarta_Sans({
+const funnelSans = Funnel_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-jakarta",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-funnel-sans",
   display: "swap",
 });
-const notoTc = Noto_Sans_TC({
+const funnelDisplay = Funnel_Display({
   subsets: ["latin"],
-  weight: ["500", "700", "800"],
-  variable: "--font-noto-tc",
+  weight: ["700", "800"],
+  variable: "--font-funnel-display",
   display: "swap",
 });
 
@@ -82,7 +82,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   const htmlLang = locale === "zh" ? "zh-Hant" : "en";
   return (
-    <html lang={htmlLang} className={`${jakarta.variable} ${notoTc.variable}`}>
+    <html lang={htmlLang} className={`${funnelSans.variable} ${funnelDisplay.variable}`}>
       <body>
         <script
           type="application/ld+json"

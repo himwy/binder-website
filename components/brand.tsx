@@ -16,7 +16,7 @@ export function Brand({ size = 26 }: { size?: number }) {
         height={size}
         className="object-contain -ml-[3px]"
       />
-      <span className="text-[16px] font-bold tracking-[-0.015em] text-ink">Bindy</span>
+      <span className="font-display text-[18px] font-bold tracking-[-0.02em] text-ink">Bindy</span>
     </Link>
   );
 }

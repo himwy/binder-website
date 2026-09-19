@@ -16,15 +16,11 @@
     "test:visual": "playwright test tests/visual",
     "test:behavior": "playwright test tests/behavior",
     "test:a11y": "playwright test tests/a11y",
-    "test": "npm run typecheck && npm run lint && playwright test",
-    "bake:screens": "tsx scripts/bake-screens.ts"
+    "test": "npm run typecheck && npm run lint && playwright test"
   },
   "dependencies": {
-    "@splinetool/react-spline": "^4.1.0",
-    "@splinetool/runtime": "^1.12.88",
     "@vercel/analytics": "^2.0.1",
     "clsx": "^2.1.1",
-    "framer-motion": "^12.38.0",
     "next": "15.5.15",
     "next-intl": "^4.9.1",
     "react": "19.1.0",

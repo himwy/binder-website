@@ -1,3 +1,4 @@
+import { AndroidButton, AppStoreButton } from "@/components/store-buttons";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Eyebrow } from "@/components/ui/eyebrow";
@@ -5,15 +6,28 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 export default function PrimitivesDemo() {
   return (
-    <main className="p-12 space-y-8 max-w-page mx-auto">
-      <Eyebrow>Hong Kong · Beta</Eyebrow>
-      <SectionHeading index="01" kicker="HOW IT WORKS" title="Four steps, one handshake." />
-      <div className="flex gap-3">
-        <Button variant="primary">Join the waitlist</Button>
-        <Button variant="nav-primary">Join the waitlist</Button>
-        <Button variant="text-link">Watch the tour</Button>
+    <main className="mx-auto max-w-page space-y-8 p-12">
+      <Eyebrow>Hong Kong · Out now</Eyebrow>
+      <SectionHeading
+        index="01"
+        kicker="HOW IT WORKS"
+        title="Four steps, one handshake."
+        lede="Real screens from the app, in the language you're reading."
+      />
+      <div className="flex flex-wrap items-center gap-3">
+        <AppStoreButton place="hero" />
+        <AndroidButton />
+        <AppStoreButton place="nav" variant="nav-primary" />
       </div>
-      <div className="flex gap-2 flex-wrap">
+      <div className="flex flex-wrap items-center gap-3 rounded-card bg-green-dark p-6">
+        <AppStoreButton place="download" variant="white" />
+        <AndroidButton tone="dark" />
+      </div>
+      <div className="flex flex-wrap gap-3">
+        <Button variant="ghost">Secondary</Button>
+        <Button variant="text-link">Text link</Button>
+      </div>
+      <div className="flex flex-wrap gap-2">
         <Badge variant="new">NEW</Badge>
         <Badge variant="neutral">EN</Badge>
         <Badge variant="neutral">JP</Badge>

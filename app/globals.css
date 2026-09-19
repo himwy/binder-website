@@ -3,19 +3,44 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* Traditional Chinese rides on the reader's own system face: PingFang on
+       iOS/macOS, JhengHei on Windows, Noto CJK on Android. No webfont. */
+    --font-cjk: "PingFang HK", "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei",
+      "Noto Sans CJK TC", "Noto Sans TC", sans-serif;
+  }
   html {
-    font-feature-settings: "ss01", "cv11";
+    font-feature-settings: "ss01";
+    background: #f7f4ef;
   }
   html[lang^="zh"] {
-    font-family: var(--font-noto-tc), var(--font-jakarta), system-ui, sans-serif;
+    font-family: var(--font-cjk), var(--font-funnel-sans), system-ui, sans-serif;
   }
   body {
-    background: #ffffff;
-    color: #0a0a0c;
+    background: #f7f4ef;
+    color: #14171a;
+    font-size: 17px;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-funnel-display), var(--font-funnel-sans), system-ui, sans-serif;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+  html[lang^="zh"] h1,
+  html[lang^="zh"] h2,
+  html[lang^="zh"] h3 {
+    font-family: var(--font-cjk), var(--font-funnel-display), system-ui, sans-serif;
+    letter-spacing: -0.01em;
+  }
+  p {
+    text-wrap: pretty;
+  }
   :focus-visible {
-    outline: 2px solid #0a0a0c;
+    outline: 2px solid #0c5f3f;
     outline-offset: 2px;
     border-radius: 6px;
   }
@@ -46,6 +71,26 @@
   50% {
     transform: translateY(-8px);
   }
+}
+
+/* Text rises once on load — transform and opacity only, never layout. */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+.rise {
+  animation: rise-in 620ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.rise-2 {
+  animation-delay: 90ms;
+}
+.rise-3 {
+  animation-delay: 170ms;
+}
+.rise-4 {
+  animation-delay: 250ms;
 }
 
 @media (prefers-reduced-motion: reduce) {

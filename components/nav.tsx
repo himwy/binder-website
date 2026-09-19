@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { Brand } from "./brand";
 import { LanguageToggle } from "./language-toggle";
-import { NavCTA } from "./nav-cta";
+import { AppStoreButton } from "./store-buttons";
 
 export function Nav() {
   const t = useTranslations("nav");
@@ -26,13 +26,13 @@ export function Nav() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/92 backdrop-blur-[10px] border-b border-hairline">
-      <div className="max-w-page mx-auto px-6 md:px-12 h-[68px] flex items-center justify-between">
+    <header className="sticky top-0 z-50 border-b border-hairline bg-[rgba(255,253,250,0.94)] backdrop-blur-[10px]">
+      <div className="max-w-page mx-auto px-6 md:px-12 h-[70px] flex items-center justify-between">
         <div className="flex items-center gap-10">
           <Brand />
           <nav
             aria-label="Primary"
-            className="hidden md:flex gap-7 text-[13px] font-medium text-muted"
+            className="hidden md:flex gap-7 text-[15px] font-medium text-muted"
           >
             <a href="#how-it-works" className="hover:text-ink transition-colors">
               {t("howItWorks")}
@@ -47,7 +47,7 @@ export function Nav() {
         </div>
         <div className="hidden md:flex items-center gap-4">
           <LanguageToggle />
-          <NavCTA />
+          <AppStoreButton place="nav" variant="nav-primary" />
         </div>
         <button
           type="button"
@@ -83,29 +83,30 @@ export function Nav() {
           open ? "max-h-[420px]" : "max-h-0"
         }`}
         aria-hidden={!open}
+        inert={!open}
       >
-        <div className="px-6 py-6 flex flex-col gap-1 bg-white">
+        <div className="px-6 py-6 flex flex-col gap-1 bg-surface-alt">
           <a
             href="#how-it-works"
-            className="py-3 text-[15px] font-semibold text-ink border-b border-hairline"
+            className="py-3 text-[17px] font-semibold text-ink border-b border-hairline"
           >
             {t("howItWorks")}
           </a>
           <a
             href="#features"
-            className="py-3 text-[15px] font-semibold text-ink border-b border-hairline"
+            className="py-3 text-[17px] font-semibold text-ink border-b border-hairline"
           >
             {t("features")}
           </a>
           <a
             href="#faq"
-            className="py-3 text-[15px] font-semibold text-ink border-b border-hairline"
+            className="py-3 text-[17px] font-semibold text-ink border-b border-hairline"
           >
             {t("faq")}
           </a>
           <div className="flex items-center justify-between pt-5">
             <LanguageToggle />
-            <NavCTA />
+            <AppStoreButton place="nav" variant="nav-primary" />
           </div>
         </div>
       </div>

@@ -3,72 +3,50 @@
     "howItWorks": "How it works",
     "features": "Features",
     "faq": "FAQ",
-    "cta": "Join the waitlist"
+    "cta": "Get the app"
+  },
+  "store": {
+    "navCta": "Get the app",
+    "ios": "Download on the App Store",
+    "android": "Get it on Google Play",
+    "androidSoon": "Android · coming soon"
   },
   "hero": {
-    "eyebrow": "Hong Kong · Closed beta",
+    "eyebrow": "Out now on iPhone · Hong Kong",
     "titleLine1": "Trade cards.",
     "titleLine2": "Meet in person.",
-    "lede": "Hong Kong's Pokémon trading board — designed for collectors who want real trades, face to face.",
-    "cta": "Join the waitlist",
-    "secondary": "Watch the tour",
-    "mascotAlt": "Bindy the shiba, happily showing off a trading card"
-  },
-  "stats": {
-    "bilingual": {
-      "num": "EN · 繁",
-      "label": "Bilingual day one",
-      "sub": "Every string flips — including the tab bar."
-    },
-    "launch": {
-      "num": "Beta",
-      "label": "Running now",
-      "sub": "Hong Kong collectors are testing it. Apply below for access."
-    }
+    "lede": "Hong Kong's Pokémon trading board. Post what you have and what you want, match with traders nearby, agree in chat, then meet and trade.",
+    "note": "Free · English and 繁體中文 · Built in Hong Kong",
+    "sceneAlt": "A miniature Hong Kong street in afternoon sun: a card shop under a mint awning, binders and sleeved cards in the window, two traders on the pavement",
+    "screenAlt": "The Bindy browse feed, each listing pairing a card offered with a card wanted"
   },
   "howItWorks": {
     "index": "01",
     "kicker": "HOW IT WORKS",
-    "title": "Four steps, one handshake."
+    "title": "Four steps, one handshake.",
+    "lede": "Real screens from the app, in the language you're reading."
   },
   "features": {
     "index": "02",
     "kicker": "FEATURES",
-    "title": "Built for how Hong Kong actually trades.",
-    "pairs": {
-      "title": "Every post is a pair.",
-      "body": "Forcing a 'want' surfaces liquidity a one-sided feed can't see."
-    },
-    "matching": {
-      "title": "Find the exact counterpart.",
-      "body": "Say what you have and what you want. Bindy surfaces the traders whose wants mirror yours — exact card matches first, close ones after."
-    },
-    "offers": {
-      "title": "Offers, not haggling.",
-      "body": "Send a structured offer inside the chat: cards on both sides, cash to balance. Accept, counter or decline in one tap."
-    }
-  },
-  "bilingual": {
-    "title": "Every string flips."
+    "title": "Built for how Hong Kong actually trades."
   },
   "faq": {
     "index": "03",
     "kicker": "FAQ",
     "title": "Questions, answered."
   },
-  "waitlist": {
-    "eyebrow": "DAY ONE",
-    "title": "Be there on launch day.",
-    "body": "A small group of Hong Kong collectors, selected from the waitlist, get early access. First-come, first-served.",
-    "cta": "Join the waitlist",
-    "micro": "No spam. One email when we open. Unsubscribe whenever.",
-    "mascotAlt": "Bindy the shiba proudly holding up a sparkling card"
+  "download": {
+    "title": "Get Bindy.",
+    "body": "Free on iPhone today. Post your first pair tonight and meet a trader this weekend.",
+    "sceneAlt": "The miniature card shop in deep green evening light"
   },
   "footer": {
     "copyright": "© 2026 Near Mint · Hong Kong",
     "instagram": "Instagram",
     "terms": "Terms",
-    "privacy": "Privacy"
+    "privacy": "Privacy",
+    "maker": "Made by Near Mint"
   },
   "notFound": {
     "title": "404",

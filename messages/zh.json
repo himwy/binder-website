@@ -3,72 +3,50 @@
     "howItWorks": "運作方式",
     "features": "功能",
     "faq": "常見問題",
-    "cta": "加入候補名單"
+    "cta": "立即下載"
+  },
+  "store": {
+    "navCta": "立即下載",
+    "ios": "App Store 下載",
+    "android": "Google Play 下載",
+    "androidSoon": "Android · 快將推出"
   },
   "hero": {
-    "eyebrow": "香港 · 封閉測試中",
-    "titleLine1": "面對面，",
-    "titleLine2": "交換每一張卡。",
-    "lede": "為香港收藏家而設的寶可夢卡牌交換平台。不用寄，面對面。",
-    "cta": "加入候補名單",
-    "secondary": "看看產品介紹",
-    "mascotAlt": "吉祥物 Bindy 開心咁展示一張卡牌"
-  },
-  "stats": {
-    "bilingual": {
-      "num": "EN · 繁",
-      "label": "由第一天起雙語",
-      "sub": "每個字都雙語,連導航列都翻譯。"
-    },
-    "launch": {
-      "num": "測試中",
-      "label": "封閉測試進行中",
-      "sub": "香港收藏家正在試用。喺下面申請試用資格。"
-    }
+    "eyebrow": "iPhone 已上架 · 香港",
+    "titleLine1": "換卡。",
+    "titleLine2": "面對面交收。",
+    "lede": "香港嘅寶可夢卡牌交換平台。貼出你有咩、想要咩，配對附近嘅玩家，喺對話傾掂，然後見面交收。",
+    "note": "免費 · 英文同繁體中文 · 香港製造",
+    "sceneAlt": "微縮香港街景：薄荷色帳篷下嘅卡舖，櫥窗有卡簿同卡，兩個人喺行人路上交換卡",
+    "screenAlt": "Bindy 瀏覽頁，每個帖都配對「我有」同「我想要」嘅卡"
   },
   "howItWorks": {
     "index": "01",
     "kicker": "運作方式",
-    "title": "四步，完成一單交易。"
+    "title": "四步，完成一單交易。",
+    "lede": "全部都係 app 入面嘅真實畫面，同你而家睇緊嘅語言一樣。"
   },
   "features": {
     "index": "02",
     "kicker": "功能",
-    "title": "為香港交易者而設。",
-    "pairs": {
-      "title": "每張貼文都是一對。",
-      "body": "強制配對「想要」嘅卡,一面倒嘅 feed 做唔到嘅配對就會浮現。"
-    },
-    "matching": {
-      "title": "找出真正對得上的交易。",
-      "body": "寫下您擁有甚麼、想要甚麼。Bindy 會找出想要您的卡、同時擁有您想要的卡的交易者——完全對得上的排在最前。"
-    },
-    "offers": {
-      "title": "出價，不用講價。",
-      "body": "在對話中直接發送清晰的出價：雙方的卡片、以現金補差價。接受、還價或拒絕，一按即可。"
-    }
-  },
-  "bilingual": {
-    "title": "每一個字都翻譯。"
+    "title": "為香港人點樣換卡而做。"
   },
   "faq": {
     "index": "03",
     "kicker": "常見問題",
     "title": "常見問題。"
   },
-  "waitlist": {
-    "eyebrow": "第一日",
-    "title": "加入第一批用戶。",
-    "body": "由候補名單揀選一小撮香港收藏家搶先體驗。先到先得。",
-    "cta": "加入候補名單",
-    "micro": "唔會騷擾你。開放嗰日先會寄一封。",
-    "mascotAlt": "Bindy 自豪咁舉起一張閃卡"
+  "download": {
+    "title": "下載 Bindy。",
+    "body": "而家 iPhone 免費下載。今晚貼出第一對卡，今個週末就可以交收。",
+    "sceneAlt": "微縮卡舖喺深綠色嘅夜色入面"
   },
   "footer": {
     "copyright": "© 2026 Near Mint · Hong Kong",
     "instagram": "Instagram",
     "terms": "服務條款",
-    "privacy": "私隱政策"
+    "privacy": "私隱政策",
+    "maker": "由 Near Mint 製作"
   },
   "notFound": {
     "title": "404",

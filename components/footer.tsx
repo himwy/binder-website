@@ -4,13 +4,21 @@ import { Brand } from "./brand";
 export function Footer() {
   const t = useTranslations("footer");
   return (
-    <footer className="border-t border-hairline">
-      <div className="max-w-page mx-auto px-6 md:px-12 py-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-[13px] text-muted">
+    <footer className="border-t border-hairline bg-surface-alt">
+      <div className="mx-auto flex max-w-page flex-col gap-4 px-6 py-10 text-[15px] text-muted md:flex-row md:items-center md:justify-between md:px-12">
         <div className="flex items-center gap-4">
-          <Brand size={22} />
+          <Brand size={24} />
           <span>{t("copyright")}</span>
         </div>
-        <nav aria-label="Footer" className="flex gap-5">
+        <nav aria-label="Footer" className="flex flex-wrap gap-5">
+          <a
+            href="https://nearmint.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-ink"
+          >
+            {t("maker")}
+          </a>
           <a
             href="https://instagram.com/binder_hk"
             target="_blank"
