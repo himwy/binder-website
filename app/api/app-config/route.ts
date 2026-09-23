@@ -28,7 +28,9 @@ export function GET() {
         // 8 = 1.3.0, live on Play 2026-09-23 20:19 (Console: 已在 Google Play 上架,
         // 全面發佈). Raised the same evening on the founder's instruction to force
         // everyone onto 1.3; 7 was the first public release, 3-6 internal tests.
-        minBuild: 8,
+        // 9 = the same-day hotfix (card sheet lost its Cancel/Add row when
+        // "Graded" was chosen — versionCode 8 is unusable for graded cards).
+        minBuild: 9,
         storeUrl: "market://details?id=tech.nearmint.binder",
       },
     },
