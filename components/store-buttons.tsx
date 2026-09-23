@@ -15,10 +15,41 @@ function AppleMark() {
   );
 }
 
-function PlayMark() {
+function PlayMark({ mono = false }: { mono?: boolean }) {
+  if (mono) {
+    return (
+      <svg
+        width="17"
+        height="19"
+        viewBox="30 336.7 120.9 129.2"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path d="M119.2,421.2c15.3-8.4,27-14.8,28-15.3c3.2-1.7,6.5-6.2,0-9.7c-2.1-1.1-13.4-7.3-28-15.3l-20.1,20.2L119.2,421.2z" />
+        <path d="M99.1,401.1l-64.2,64.7c1.5,0.2,3.2-0.2,5.2-1.3c4.2-2.3,48.8-26.7,79.1-43.3L99.1,401.1L99.1,401.1z" />
+        <path d="M99.1,401.1l20.1-20.2c0,0-74.6-40.7-79.1-43.1c-1.7-1-3.6-1.3-5.3-1L99.1,401.1z" />
+        <path d="M99.1,401.1l-64.3-64.3c-2.6,0.6-4.8,2.9-4.8,7.6c0,7.5,0,107.5,0,113.8c0,4.3,1.7,7.4,4.9,7.7L99.1,401.1z" />
+      </svg>
+    );
+  }
   return (
-    <svg width="17" height="19" viewBox="0 0 18 20" fill="currentColor" aria-hidden="true">
-      <path d="M2.3 1.2c-.3.3-.5.8-.5 1.4v14.8c0 .6.2 1.1.5 1.4l.1.1 8.3-8.3v-.2L2.4 1.1l-.1.1zM13.8 7.6l-2.6-1.5-2.3 2.3 2.3 2.3 2.7-1.5c.8-.4.8-1.2 0-1.6zM10.5 11.3 2.4 19.4c.3.3.7.3 1.2 0l7.7-4.4-.8-3.7z" />
+    <svg width="18" height="19" viewBox="30 336.7 120.9 129.2" aria-hidden="true">
+      <path
+        fill="#FFCE00"
+        d="M119.2,421.2c15.3-8.4,27-14.8,28-15.3c3.2-1.7,6.5-6.2,0-9.7c-2.1-1.1-13.4-7.3-28-15.3l-20.1,20.2L119.2,421.2z"
+      />
+      <path
+        fill="#FF3A44"
+        d="M99.1,401.1l-64.2,64.7c1.5,0.2,3.2-0.2,5.2-1.3c4.2-2.3,48.8-26.7,79.1-43.3L99.1,401.1L99.1,401.1z"
+      />
+      <path
+        fill="#00D95F"
+        d="M99.1,401.1l20.1-20.2c0,0-74.6-40.7-79.1-43.1c-1.7-1-3.6-1.3-5.3-1L99.1,401.1z"
+      />
+      <path
+        fill="#00C3FF"
+        d="M99.1,401.1l-64.3-64.3c-2.6,0.6-4.8,2.9-4.8,7.6c0,7.5,0,107.5,0,113.8c0,4.3,1.7,7.4,4.9,7.7L99.1,401.1z"
+      />
     </svg>
   );
 }
@@ -75,10 +106,11 @@ export function AndroidButton({
   if (ANDROID_LIVE) {
     return (
       <Button
-        variant={tone === "dark" ? "outline-light" : "ghost"}
+        variant={tone === "dark" ? "white" : "store"}
         as="a"
         href={PLAY_STORE_URL}
         onClick={() => trackDownloadClick(place, locale, "android")}
+        className={tone === "dark" ? "text-ink" : undefined}
       >
         <PlayMark />
         {t("android")}
@@ -93,7 +125,7 @@ export function AndroidButton({
           : "inline-flex h-[54px] items-center gap-[10px] rounded-btn border-[1.5px] border-border bg-white/70 px-6 text-[16px] font-semibold text-muted"
       }
     >
-      <PlayMark />
+      <PlayMark mono />
       {t("androidSoon")}
     </span>
   );

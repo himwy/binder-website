@@ -2,7 +2,14 @@ import { clsx } from "clsx";
 import type { ComponentPropsWithoutRef } from "react";
 import type React from "react";
 
-type Variant = "primary" | "ghost" | "nav-primary" | "white" | "outline-light" | "text-link";
+type Variant =
+  | "primary"
+  | "store"
+  | "ghost"
+  | "nav-primary"
+  | "white"
+  | "outline-light"
+  | "text-link";
 
 type Props = ComponentPropsWithoutRef<"button"> & {
   variant?: Variant;
@@ -17,6 +24,8 @@ const base =
 const variants: Record<Variant, string> = {
   primary:
     "h-[54px] px-6 rounded-btn bg-green text-white text-[16px] shadow-[0_10px_22px_rgba(12,95,63,0.22)] hover:bg-[#0c6a47] focus-visible:outline-green-deep",
+  store:
+    "h-[54px] px-6 rounded-btn bg-white text-ink text-[16px] border border-hairline shadow-[0_10px_22px_rgba(20,23,26,0.12)] hover:bg-[#fffdfa] focus-visible:outline-ink",
   ghost:
     "h-[54px] px-6 rounded-btn bg-white/88 text-ink text-[16px] border-[1.5px] border-border hover:bg-white focus-visible:outline-ink",
   "nav-primary":
