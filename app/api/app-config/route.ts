@@ -25,9 +25,10 @@ export function GET() {
         storeUrl: "itms-apps://apps.apple.com/app/id6794384936",
       },
       android: {
-        // 7 = the first public Play release (1.2.0), live 2026-09-23. Below it
-        // are only internal-test builds (3-6), which must now update too.
-        minBuild: 7,
+        // 8 = 1.3.0, live on Play 2026-09-23 20:19 (Console: 已在 Google Play 上架,
+        // 全面發佈). Raised the same evening on the founder's instruction to force
+        // everyone onto 1.3; 7 was the first public release, 3-6 internal tests.
+        minBuild: 8,
         storeUrl: "market://details?id=tech.nearmint.binder",
       },
     },
