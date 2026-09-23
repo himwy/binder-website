@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl";
 export function Download() {
   const t = useTranslations("download");
   return (
-    <section className="mx-auto max-w-page px-6 pb-20 md:px-12 md:pb-28">
+    <section id="get" className="mx-auto max-w-page px-6 pb-20 md:px-12 md:pb-28">
       <div className="relative isolate overflow-hidden rounded-[20px] bg-green-dark px-7 py-14 md:px-14 md:py-20">
         <picture className="absolute inset-0 -z-20 block h-full w-full">
           <source media="(min-width: 768px)" srcSet="/scenes/download.webp" />
@@ -33,7 +33,7 @@ export function Download() {
         <p className="mt-4 max-w-[42ch] text-[17px] text-[rgba(242,247,243,0.88)]">{t("body")}</p>
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <AppStoreButton place="download" variant="white" />
-          <AndroidButton tone="dark" />
+          <AndroidButton place="download" tone="dark" />
         </div>
       </div>
     </section>

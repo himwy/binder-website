@@ -1,6 +1,6 @@
-// The app is live on the App Store; Android is built but not published yet, so
-// the Play button stays hidden behind ANDROID_LIVE until it is. Flip this one
-// constant (and nothing else) on publish day.
+// Both stores are live. ANDROID_LIVE stays as the single switch for the Play
+// button: set it false to pull the button (a suspended listing, a staged
+// rollout) and the site falls back to "Android coming soon" everywhere.
 export const APP_STORE_URL = "https://apps.apple.com/hk/app/id6794384936";
 export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=tech.nearmint.binder";
-export const ANDROID_LIVE = false;
+export const ANDROID_LIVE = true;

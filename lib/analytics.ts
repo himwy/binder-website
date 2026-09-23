@@ -3,6 +3,8 @@ import { track } from "@vercel/analytics";
 
 type Location = "nav" | "hero" | "download" | "footer";
 
-export function trackDownloadClick(location: Location, locale: Locale) {
-  track("download_click", { location, locale, store: "ios" });
+type Store = "ios" | "android";
+
+export function trackDownloadClick(location: Location, locale: Locale, store: Store) {
+  track("download_click", { location, locale, store });
 }

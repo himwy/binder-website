@@ -2,7 +2,7 @@
 
 The download page for Bindy — Hong Kong's Pokémon trading board.
 
-Live: [binderhk.com](https://binderhk.com) · App Store: [Bindy](https://apps.apple.com/hk/app/id6794384936)
+Live: [binderhk.com](https://binderhk.com) · iPhone and Android
 
 ## Stack
 
@@ -50,15 +50,16 @@ No env vars are required.
 | `npm run test:a11y` | Axe-core accessibility audit |
 | `npm run test` | typecheck + lint + all Playwright |
 
-## Publishing Android
+## Stores
 
-The Play Store button is written and tested; it is hidden behind one constant.
-When `tech.nearmint.binder` goes live on Google Play:
+Both are live: [App Store](https://apps.apple.com/hk/app/id6794384936) and
+[Google Play](https://play.google.com/store/apps/details?id=tech.nearmint.binder).
 
-1. Set `ANDROID_LIVE = true` in [`lib/store.ts`](lib/store.ts).
-2. Update the "Is Bindy out?" answer in [`lib/content.ts`](lib/content.ts).
-3. Run `npm test` — `tests/behavior/download-cta.spec.ts` asserts the coming-soon
-   state, so flip that test with it.
+`ANDROID_LIVE` in [`lib/store.ts`](lib/store.ts) is the single switch for the
+Play button. Set it to `false` — for a suspended listing or a staged rollout —
+and every Android CTA degrades to "coming soon" instead of a dead link;
+`tests/behavior/download-cta.spec.ts` asserts the live state, so flip it with
+the constant.
 
 The app's own store URLs and kill-switch live in
 [`app/api/app-config/route.ts`](app/api/app-config/route.ts), which the mobile

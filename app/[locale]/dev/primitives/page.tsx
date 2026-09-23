@@ -1,4 +1,4 @@
-import { AndroidButton, AppStoreButton } from "@/components/store-buttons";
+import { AndroidButton, AppStoreButton, NavDownloadLink } from "@/components/store-buttons";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Eyebrow } from "@/components/ui/eyebrow";
@@ -16,12 +16,12 @@ export default function PrimitivesDemo() {
       />
       <div className="flex flex-wrap items-center gap-3">
         <AppStoreButton place="hero" />
-        <AndroidButton />
-        <AppStoreButton place="nav" variant="nav-primary" />
+        <AndroidButton place="hero" />
+        <NavDownloadLink />
       </div>
       <div className="flex flex-wrap items-center gap-3 rounded-card bg-green-dark p-6">
         <AppStoreButton place="download" variant="white" />
-        <AndroidButton tone="dark" />
+        <AndroidButton place="download" tone="dark" />
       </div>
       <div className="flex flex-wrap gap-3">
         <Button variant="ghost">Secondary</Button>

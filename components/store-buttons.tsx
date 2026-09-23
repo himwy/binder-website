@@ -23,6 +23,19 @@ function PlayMark() {
   );
 }
 
+/** Nav CTA: jumps to the download band rather than picking a store for you. */
+export function NavDownloadLink() {
+  const t = useTranslations("store");
+  return (
+    <a
+      href="#get"
+      className="inline-flex h-[42px] items-center justify-center gap-[10px] rounded-btn-sm bg-green px-4 text-[14px] font-semibold tracking-[-0.005em] text-white transition-colors duration-150 hover:bg-[#0c6a47] focus-visible:outline focus-visible:outline-2 focus-visible:outline-green-deep focus-visible:outline-offset-2"
+    >
+      {t("navCta")}
+    </a>
+  );
+}
+
 /** The App Store button. Everywhere the waitlist button used to be. */
 export function AppStoreButton({
   place,
@@ -38,7 +51,7 @@ export function AppStoreButton({
       variant={variant}
       as="a"
       href={APP_STORE_URL}
-      onClick={() => trackDownloadClick(place, locale)}
+      onClick={() => trackDownloadClick(place, locale, "ios")}
     >
       <AppleMark />
       {variant === "nav-primary" ? t("navCta") : t("ios")}
@@ -47,15 +60,26 @@ export function AppStoreButton({
 }
 
 /**
- * Android: the real Play button is written and waiting. Until the app is
- * published, ANDROID_LIVE is false and this renders the "coming soon" note
- * instead — flipping one constant ships the button.
+ * Android. Live since 2026-09-23; if ANDROID_LIVE is ever switched off the
+ * button degrades to a "coming soon" note rather than a dead link.
  */
-export function AndroidButton({ tone = "light" }: { tone?: "light" | "dark" }) {
+export function AndroidButton({
+  place,
+  tone = "light",
+}: {
+  place: Place;
+  tone?: "light" | "dark";
+}) {
   const t = useTranslations("store");
+  const locale = useLocale() as Locale;
   if (ANDROID_LIVE) {
     return (
-      <Button variant={tone === "dark" ? "outline-light" : "ghost"} as="a" href={PLAY_STORE_URL}>
+      <Button
+        variant={tone === "dark" ? "outline-light" : "ghost"}
+        as="a"
+        href={PLAY_STORE_URL}
+        onClick={() => trackDownloadClick(place, locale, "android")}
+      >
         <PlayMark />
         {t("android")}
       </Button>

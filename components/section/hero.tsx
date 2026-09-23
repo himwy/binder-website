@@ -47,7 +47,7 @@ export function Hero() {
           </p>
           <div className="rise rise-4 mt-8 flex flex-wrap items-center gap-3">
             <AppStoreButton place="hero" />
-            <AndroidButton />
+            <AndroidButton place="hero" />
           </div>
           <p className="rise rise-4 mt-4 text-[15px] text-[#4d5356]">{t("note")}</p>
         </div>

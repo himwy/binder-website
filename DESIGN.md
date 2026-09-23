@@ -53,9 +53,10 @@ Funnel Display (headings) + Funnel Sans (everything else), Noto Sans TC for
 
 ## Buttons
 
-App Store everywhere the waitlist button used to be (`components/store-buttons.tsx`).
-Android renders as a "coming soon" pill until `ANDROID_LIVE` flips in
-`lib/store.ts`, then the same component ships a Play button — see README.
+App Store and Google Play everywhere the waitlist button used to be
+(`components/store-buttons.tsx`). The Android button falls back to a "coming
+soon" pill if `ANDROID_LIVE` is switched off in `lib/store.ts`, so the site
+never shows a dead store link — see README.
 
 ## Motion
 

@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { Brand } from "./brand";
 import { LanguageToggle } from "./language-toggle";
-import { AppStoreButton } from "./store-buttons";
+import { NavDownloadLink } from "./store-buttons";
 
 export function Nav() {
   const t = useTranslations("nav");
@@ -47,7 +47,7 @@ export function Nav() {
         </div>
         <div className="hidden md:flex items-center gap-4">
           <LanguageToggle />
-          <AppStoreButton place="nav" variant="nav-primary" />
+          <NavDownloadLink />
         </div>
         <button
           type="button"
@@ -106,7 +106,7 @@ export function Nav() {
           </a>
           <div className="flex items-center justify-between pt-5">
             <LanguageToggle />
-            <AppStoreButton place="nav" variant="nav-primary" />
+            <NavDownloadLink />
           </div>
         </div>
       </div>

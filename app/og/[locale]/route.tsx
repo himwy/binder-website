@@ -12,8 +12,8 @@ export async function GET(_req: Request, { params }: { params: Promise<{ locale:
   const isZh = locale === "zh";
   const title = isZh ? "換卡。面對面交收。" : "Trade cards. Meet in person.";
   const note = isZh
-    ? "iPhone 已上架 · Android 快將推出"
-    : "Out now on iPhone · Android coming soon";
+    ? "iPhone 同 Android 已上架 · 香港"
+    : "Out now on iPhone and Android · Hong Kong";
   return new ImageResponse(
     <div
       style={{

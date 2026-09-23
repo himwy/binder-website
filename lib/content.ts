@@ -124,8 +124,8 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     q: { en: "Is Bindy out?", zh: "Bindy 推出咗未？" },
     a: {
-      en: "Yes — Bindy is free on the App Store now. Android is coming soon; this page turns into a Play Store button the day it lands.",
-      zh: "推出咗。而家可以喺 App Store 免費下載。Android 版快將推出，一上架呢度就會變成 Google Play 按鈕。",
+      en: "Yes — Bindy is free on the App Store and on Google Play.",
+      zh: "推出咗。App Store 同 Google Play 都可以免費下載。",
     },
   },
   {
