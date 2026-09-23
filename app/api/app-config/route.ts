@@ -20,12 +20,14 @@ export function GET() {
         // 41 = the build behind App Store version 1.2, live since 2026-09-14
         // (verified via the public iTunes lookup before this was raised — raising
         // it earlier would trap 1.0/1.1 users on an update screen pointing at a
-        // store that did not yet have 1.2). Raise to 43 once 1.2.1 is live.
-        minBuild: 41,
+        // store that did not yet have 1.2). 43 = 1.2.1, live 2026-09-23.
+        minBuild: 43,
         storeUrl: "itms-apps://apps.apple.com/app/id6794384936",
       },
       android: {
-        minBuild: 1,
+        // 7 = the first public Play release (1.2.0), live 2026-09-23. Below it
+        // are only internal-test builds (3-6), which must now update too.
+        minBuild: 7,
         storeUrl: "market://details?id=tech.nearmint.binder",
       },
     },
