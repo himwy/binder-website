@@ -21,7 +21,12 @@ export function GET() {
         // (verified via the public iTunes lookup before this was raised — raising
         // it earlier would trap 1.0/1.1 users on an update screen pointing at a
         // store that did not yet have 1.2). 43 = 1.2.1, live 2026-09-23.
-        minBuild: 43,
+        // 46 = 1.4, live on the App Store (public iTunes lookup reports 1.4 with the
+        // 1.4 release notes, released 2026-09-30T21:10Z; build 46 was the only build
+        // attached to that version). Raised on the founder's instruction to force
+        // everyone onto the current version. 45 = 1.3; 44 never shipped (its review
+        // submission was cancelled for the graded-card-sheet bug).
+        minBuild: 46,
         storeUrl: "itms-apps://apps.apple.com/app/id6794384936",
       },
       android: {
@@ -30,7 +35,10 @@ export function GET() {
         // everyone onto 1.3; 7 was the first public release, 3-6 internal tests.
         // 9 = the same-day hotfix (card sheet lost its Cancel/Add row when
         // "Graded" was chosen — versionCode 8 is unusable for graded cards).
-        minBuild: 9,
+        // 10 = 1.4.0, live on Play (public page shows 1.4.0 with the 1.4 notes,
+        // verified 2026-10-01; production = versionCode 10, Hong Kong only). Raised on
+        // the founder's instruction to force everyone onto the current version.
+        minBuild: 10,
         storeUrl: "market://details?id=tech.nearmint.binder",
       },
     },
